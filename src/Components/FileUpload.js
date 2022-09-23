@@ -6,7 +6,7 @@ import { v4 } from "uuid";
 const FileUpload = () => {
   const [imgupload, setImgUpload] = useState(null);
   const [imgList, setImgList] = useState([]);
-  
+
   const imgListRef = ref(storage, "images/");
   const uploadImage = () => {
     if (imgupload === null) return;
@@ -18,7 +18,7 @@ const FileUpload = () => {
       });
     });
   };
-
+  //comment added
   useEffect(() => {
     listAll(imgListRef).then((res) => {
       // console.log(res);

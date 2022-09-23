@@ -5,7 +5,7 @@ import FileUploadClass from "./Components/FileUploadClass";
 const App = () => {
   return (
     <>
-      {/* <FileUpload /> */}
+      <FileUpload />
       <FileUploadClass />
     </>
   );
